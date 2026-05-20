@@ -10,7 +10,6 @@ The project consists of the following key files and directories:
 * `summarizer.py`: summarizes file contents
 * `config.py`: contains configuration settings
 * `requirements.txt`: lists dependencies required by the project
-* `testfile/`: a sample directory tree used for testing purposes
 
 ## Key Components
 The project relies on the following key components:
@@ -28,7 +27,7 @@ The project works by:
 
 ## Setup Requirements
 To set up the project, the following environment variables and configuration settings are required:
-* `GROQ_API_KEY`: API key for the Groq API
+* Setup a .env with `GROQ_API_KEY=your_key_here`
 * Configuration settings defined in `config.py`
 * Dependencies specified in `requirements.txt`
 
@@ -39,5 +38,3 @@ To use the project, follow these steps:
 3. Configure the settings in `config.py`
 4. Run the project using the `readmefy.py` entrypoint
 5. The project will generate a README file based on the scanned directory tree and detected environment variables
-
-Note: The actual installation commands and setup requirements may vary depending on the user's environment and configuration. It is recommended to consult the `config.py` and `requirements.txt` files for more information on setting up the project.

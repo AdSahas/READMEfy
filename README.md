@@ -1,5 +1,5 @@
 # Project Overview
-This project is designed to automatically generate precise software documentation using a large language model (LLM) provided by the Groq API. The primary goal is to streamline the process of creating informative project documentation by scanning directory trees, detecting environment variables, generating prompts, and summarizing file contents.
+This project is designed to automatically generate software documentation using a large language model (LLM) provided by the Groq API. The primary goal is to streamline the process of creating informative project documentation by scanning directory trees, detecting environment variables, generating prompts, and summarizing file contents.
 
 ## Project Structure and Layout
 The project consists of the following key files and directories:
@@ -38,3 +38,7 @@ To use the project, follow these steps:
 3. Configure the settings in `config.py`
 4. Run the project using the `readmefy.py` entrypoint
 5. The project will generate a README file based on the scanned directory tree and detected environment variables
+
+## Notes
+1. This project is still in an MVP version. Optimizations will be released in the future
+2. LLMs make mistakes - verify generated README for accuracy and correctness. 

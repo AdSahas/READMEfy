@@ -1,5 +1,4 @@
 def build_file_prompt(file_path, content):
-
     return f"""
 You are analyzing a single source-code file for automatic README generation.
 
@@ -29,7 +28,6 @@ Summary:
 
 
 def build_directory_prompt(directory, file_summaries):
-
     joined_summaries = "\n".join(file_summaries)
 
     return f"""
@@ -57,7 +55,6 @@ Directory summary:
 
 
 def build_readme_prompt(directory_summaries, directory_tree, project_flow=""):
-
     summaries_text = ""
 
     for item in directory_summaries:

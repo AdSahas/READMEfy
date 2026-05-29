@@ -24,10 +24,7 @@ def summarize_single_file(file_path):
     if not summary:
         return None
 
-    return {
-        "file": file_path,
-        "summary": summary.strip()
-    }
+    return {"file": file_path, "summary": summary.strip()}
 
 
 def summarize_files(files):

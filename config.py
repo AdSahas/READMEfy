@@ -1,7 +1,9 @@
-MAX_WORKERS = 2 # Max number of concurrent workers (adjust to rate-limit GROQ calls and avoid being blocked)
-MAX_FILE_LENGTH = 4000 # max length of a file to be processed
-MODEL = "llama-3.3-70b-versatile" # use this model for the LLM
-TEMPERATURE = 0.2 # temperature for the LLM - lower values for more deterministic outputs
+MAX_WORKERS = 2  #  Max number of concurrent workers (adjust to rate-limit GROQ calls and avoid being blocked)
+MAX_FILE_LENGTH = 4000  # max length of a file to be processed
+MODEL = "llama-3.3-70b-versatile"  # use this model for the LLM
+TEMPERATURE = (
+    0.2  # temperature for the LLM - lower values for more deterministic outputs
+)
 
 IGNORE_DIRS = {
     ".git",
@@ -24,7 +26,6 @@ IGNORE_FILES = {
     "pnpm-lock.yaml",
     ".env",
 }
-
 
 
 # the file extensions that the application will process

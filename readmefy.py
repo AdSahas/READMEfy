@@ -4,9 +4,10 @@ from llm import summarize_directories, generate_readme
 
 
 def main():
-
     root_dir = input("Repository path: ").strip()
-    print("Please answer these optional questions. It will help the LLM generate a more accurate README.")
+    print(
+        "Please answer these optional questions. It will help the LLM generate a more accurate README."
+    )
     entrypoint = input("Main entrypoint file (optional): ").strip()
     project_flow = input("Project flow / purpose (optional): ").strip()
 
@@ -30,17 +31,15 @@ def main():
     directory_summaries = summarize_directories(directory_map)
 
     if entrypoint:
-        directory_summaries.append({
-            "directory": "ENTRYPOINT",
-            "summary": f"The main executable entrypoint of the project is `{entrypoint}`."
-        })
+        directory_summaries.append(
+            {
+                "directory": "ENTRYPOINT",
+                "summary": f"The main executable entrypoint of the project is `{entrypoint}`.",
+            }
+        )
 
     print("\nGenerating README...")
-    readme = generate_readme(
-        directory_summaries,
-        directory_tree,
-        project_flow
-    )
+    readme = generate_readme(directory_summaries, directory_tree, project_flow)
 
     output_path = f"{root_dir}/README.generated.md"
 

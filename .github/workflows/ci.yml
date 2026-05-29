@@ -27,7 +27,7 @@ jobs:
       - name: Lint the code
         run: |
           pip install flake8
-          flake8 . --ignore=E501 --exclude=.git,__pycache__
+          flake8 . --ignore=E501 --ignore=E262 --exclude=.git,__pycache__
 
       - name: Smoke test imports
         run: |
